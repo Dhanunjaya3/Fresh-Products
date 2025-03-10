@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e08c8613d2.js" crossorigin="anonymous"></script>
+        <title>project</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <section class="parent">
+            <!-- nav bar part -->
+            <nav>
+                <section>
+                    <h4><i class="fa-solid fa-basket-shopping"></i> Achievers<span> IT</span><h4>
+                </section>
+                <ul>
+                    <li>
+                        <a>Homes</a>
+                    </li>
+                    <li>
+                        <a>Features</a>
+                    </li>
+                    <li>
+                        <a>Products</a>
+                    </li>
+                    <li>
+                        <a>Categories</a>
+                    </li>
+                    <li>
+                        <a>Review</a>
+                    </li>
+                    <li>
+                        <a>Blogs</a>
+                    </li>
+                </ul>
+                <section class="icons">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user" aria-hidden="true" id="clicked"></i>
+                    </a>
+                </section>
+            </nav>
+            <!-- Nav bar part ends -->
+            <!--login form-->
+            <section class="wrapper animate__animated animate__bounceInRight" id="form">
+                <form  method="get" action="#" novalidate>
+                    <h2>LoginNow</h2>
+                    <section>
+                        <label for="exampleInputEmail" class="form-label">Email address</label>
+                        <span class="text-danger">*</span>
+                        <input type="email" class="form-control border border-primary" id="exampleInputEmail" aria-describedby="emailHelp">
+                        <span class="dNone" id="eErr">please enter email</span>
+                    </section>
+                    <section>
+                        <br><label for="exampleInputPassword" class="form-label">Password</label>
+                        <span class="text-danger">*</span>
+                        <input type="password" class="form-control border border-primary" id="exampleInputPassword">
+                        <span class="dNone" id="pErr">please enter password</span><br/>
+                    </section>
+                    <br><button style="padding: 10px; background-color: rgb(155, 216, 196);"  id="login">login</button>
+                </form>
+                <br><section id="forgot password">Forgot your Password<a href="#">Click here</a></section>
+                <br><section id="new account">Don't Have An Account<a href="#" id="register_form">Create Now</a></section>
+                <br><button style="padding: 10px;" type="close" id="Close" action="#">Close</button>
+            </section>
+            <!--login form ends-->
+            <!--Registration form -->
+            <section class="registration animate__animated animate__zoomInDown" id="registerForm">
+                <form action="#">
+                    <h2>Registration form</h2>
+                    <section>
+                        <label for="Input_firstname">First name</label><span class="text-danger">*</span>
+                        <input type="text" id="Input_firstname" textarea: maxlength="16"><br></br>
+                        <span class="dNone" id="fErr">please enter First name</span><br/>
+
+                        <label for="Input_lastname">Last name</label><span class="text-danger">*</span>
+                        <input type="text" id="Input_lastname"  textarea: maxlength="16"><br></br>
+                        <span class="dNone" id="lErr">please enter Last name</span><br/>
+
+                        <label for="Input_email"> E mail</label><span class="text-danger">*</span>
+                        <input type="text" id="Input_email" ><br></br>
+                        <span class="dNone" id="e_Err">please enter E mail</span><br/>
+
+                        <label for="Input_create_password">Create Password</label><span class="text-danger">*</span>
+                        <input type="text" id="Input_create_password"><br></br>
+                        <span class="dNone" id="p_Err">please Create password</span><br/>
+
+                        <label for="Input_Repeat_password">Repeat password</label><span class="text-danger">*</span>
+                        <input type="text" id="Input_Repeat_password"><br></br>
+                        <span class="dNone" id="rErr">please Repeat password</span><br/>
+
+                        <label for="Message">Message</label><br>
+                        <textarea name="Message" id="Message" cols="20" rows="5" oninput="wordCount()"></textarea><br>
+                        <span id="showCount"></span><br></br>
+
+                        <input type="button" name="register" value="register" id="register" class="register">
+                        <input type="button" name="cancel" value="cancel" id="cancel" class="cancel">
+                    </section>
+                </form>
+            </section>
+            <!--Registration form ends-->
+            <section class="forgot_password  animate__animated animate__bounceInRight" id="new_form">
+                <form action="#" method="get" novalidate></form>
+                <h2></h2>
+            </section>
+            <!--login form ends-->
+            <!-- banner part -->
+            <section class="banner">
+                <img src="./Assets/images/banner-bg.webp">
+                <div>
+                    <h2 class="quote">Fresh and <span>organic </span> for you</h2>
+                    <P class="banner_text">Fresh fruits and Vegetables will provide Good health to you <br>Eat fresh things do nothing... </br></P>
+                    <button>SHOP NOW</button>
+                </div>
+            </section>
+            <!-- banner part ends -->
+            <!-- features part -->
+            <h2>Our<span class="polygon">Features</span></h2>
+            <section class="features">
+                <section>
+                    <img class="feature-img" src="./Assets/images/feature-img-1.png" alt="Assets">
+                    <h2>Fresh and Organic</h2>
+                    <P>lorem ipsum dolorsiot amit consecteur adispicingeli.aliquqm</P>
+                    <p>lobero nostrum veniam facere tempare nisi </p>
+                    <button>Read more</button>
+                </section>
+                <section>
+                    <img class="feature-img-2" src="./Assets/images/feature-img-2.png" alt="Assets">
+                    <h2>Free Delivery</h2>
+                    <P>lorem ipsum dolorsiot amit consecteur adispicingeli.aliquqm</P>
+                    <p>lobero nostrum veniam facere tempare nisi </p>
+                    <button>Read more</button>
+                </section>
+                <section>
+                    <img class="feature-img" src="./Assets/images/feature-img-3.png" alt="Assets">
+                    <h2>Easy Payment</h2>
+                    <P>lorem ipsum dolorsiot amit consecteur adispicingeli.aliquqm</P>
+                    <p>lobero nostrum veniam facere tempare nisi </p>
+                    <button>Read more</button>
+                </section>
+            </section>
+            <!-- fetures part ends -->
+            <!-- products part -->
+            <h2>Our<span class="polygon">Products</span></h2>
+            <section class="products">
+                <section>
+                    <img src="./Assets/images/product-4.png" alt="Assets">
+                    <h2>Fresh Cabbage</h2>
+                    <p>₹4.99/--₹10.99</p>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span><br>
+                    <button>Add to Cart</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/product-1.png" alt="Assets">
+                    <h2>Fresh Orange</h2>
+                    <p>₹4.99/--₹10.99</p>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span><br>
+                    <button>Add to Cart</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/product-2.png" alt="Assets">
+                    <h2>Fresh Onion</h2>
+                    <p>₹4.99/--₹10.99</p>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span><br>
+                    <button>Add to Cart</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/product-8.png" alt="Assets">
+                    <h2>Fresh lemon</h2>
+                    <p>₹4.99/--₹10.99</p>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span><br>
+                    <button>Add to Cart</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/product-5.png" alt="Assets">
+                    <h2>Fresh Potato</h2>
+                    <p>₹4.99/--₹10.99</p>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span><br>
+                    <button>Add to Cart</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/product-6.png" alt="Assets">
+                    <h2>Fresh Avacado</h2>
+                    <p>₹4.99/--₹10.99</p>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span><br>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+            <!-- products part ends -->
+            <!-- categories part-->
+            <h2>Our<span class="polygon">Categories</span></h2>
+            <section class="categories">
+                <section>
+                    <img src="./Assets/images/cat-1.png" alt="Assets">
+                    <h2>Vegetables</h2>
+                    <P>upto 45% off</P>
+                    <button>Shop Now</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/cat-2.png" alt="Assets">
+                    <h2>Fresh Fruits</h2>
+                    <P>upto 45% off</P>
+                    <button>Shop Now</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/cat-3.png" alt="Assets">
+                    <h2>Dairy Products</h2>
+                    <P>upto 45% off</P>
+                    <button>Shop Now</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/cat-4.png" alt="Assets">
+                    <h2>Fresh Meat</h2>
+                    <P>upto 45% off</P>
+                    <button>Shop now</button>
+                </section>
+            </section>
+            <!-- categories part ends-->
+            <!-- review part -->
+            <h2>Customers <span class="polygon">Review</span></h2>
+            <section class="review">
+                <section>
+                    <img src="./Assets/images/pic-1.png" alt="Assets">
+                    <p>lorem,lpsum dolor siot ametconsecteur adispicing elit.</br>unde sunt fugiat dolore lpsum id est maxime ad tempere</br> quasi tentur </p>
+                    <h2>John Deo</h2>
+                    <div class="stars">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                    </div>
+                </section>
+                <section>
+                    <img src="./Assets/images/pic-2.png" alt="Assets">
+                    <p>lorem,lpsum dolor siot ametconsecteur adispicing elit.</br>unde sunt fugiat dolore lpsum id est maxime ad tempere</br> quasi tentur </p>
+                    <h2>John Deo</h2>
+                    <div class="stars">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                    </div>
+                </section>
+                <section>
+                    <img src="./Assets/images/pic-3.png" alt="Assets">
+                    <p>lorem,lpsum dolor siot ametconsecteur adispicing elit. </br>unde sunt fugiat dolore lpsum id est maxime ad tempere</br> quasi tenur</p>
+                    <h2>John Deo</h2>
+                    <div class="stars">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                    </div>
+                </section>
+            </section>
+            <!-- review part ends-->
+            <!-- blog part -->
+            <h2>OUR <span class="polygon">Blogs</span></h2>
+            <section class="blogs">
+                <section>
+                    <img src="./Assets/images/blog-1.jpg" alt="Assets">
+                    <div class="date">
+                        <span><i class="user fa-solid fa-user"></i> By user</span>
+                        <span class="candy"><i class="calender fa-solid fa-calendar-days"></i> 22nd Dec 2022</span>
+                    </div>
+                    <h3>Fresh and Organic Vegetables and Fruits</h3>
+                    <p>lorem ipsum dolor sit amet consecteur</p>
+                    <button class="buttons">read more</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/blog-2.jpg" alt="Assets">
+                    <div class="date">
+                        <span><i class="user fa-solid fa-user"></i> By user</span>
+                        <span class="candy"><i class="calender fa-solid fa-calendar-days"></i> 22nd Dec 2022</span>
+                    </div>
+                    <h3>Fresh and Organic Vegetables and Fruits</h3>
+                    <p>lorem ipsum dolor sit amet consecteur</p>
+                    <button class="buttons">read more</button>
+                </section>
+                <section>
+                    <img src="./Assets/images/blog-3.jpg" alt="Assets">
+                    <div class="date">
+                        <span><i class="user fa-solid fa-user"></i> By user</span>
+                        <span class="candy"><i class="calender fa-solid fa-calendar-days"></i> 22nd Dec 2022</span>
+                    </div>
+                    <h3>Fresh and Organic Vegetables and Fruits</h3>
+                    <p>lorem ipsum dolor sit amet consecteur</p>
+                    <button>read more</button>
+                </section>
+            </section>
+            <!-- blog part ends-->
+            <!-- footer part -->
+            <footer>
+                <section class="footer_icons">
+                    <h2>Achievers <span> IT </span><i class="fa-solid fa-basket-shopping"></i></h2>
+                    <p>lorem ipsum dolor sit ,amit consecteur.<br/> adispicing elit. aliquqm, saepe</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </section>
+                <section>
+                    <h2>Contact Info</h2>
+                    <li><i class="fa-solid fa-phone"></i> <span> +121-456-7890</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span> +111-222-333</span></li>
+                    <li><i class="fa-sharp fa-solid fa-envelope"></i><span>  shaikanhas@gmail.com </span></li>
+                    <li><i class="fa-solid fa-location-dot"></i><span>  mumbai india-400104</span></li>
+                </section>
+                <section >
+                    <h2>Quick Links</h2>
+                    <li><i class="fa-sharp fa-solid fa-arrow-right"></i><span>  Home</span></li>
+                    <li><i class="fa-sharp fa-solid fa-arrow-right"></i><span>  Features</span></li>
+                    <li><i class="fa-sharp fa-solid fa-arrow-right"></i><span>  products</span></li>
+                    <li><i class="fa-sharp fa-solid fa-arrow-right"></i><span>  categories</span></li>
+                    <li><i class="fa-sharp fa-solid fa-arrow-right"></i><span>  Review</span></li>
+                    <li><i class="fa-sharp fa-solid fa-arrow-right"></i><span>  Blogs</span></li>
+                </section>
+                <section>
+                    <h2>NEW Steller</h2>
+                    <p>subscribe for latest updates</p>
+                    <form>
+                        <label for="e-mail"></label>
+                        <input type="text" name="name" id="e-mail" value="your mail">
+                        <button>submit</button>
+                        <img src="./Assets/images/payment.png" alt="Assets" width="80%">
+                    </form>
+                </section>
+            </footer>
+            <!--footer part ends -->
+            <h3 class="developer"><hr>This web page was developed by Dhanunjaya</h3>
+            <script>
+                //  login page starts
+                // login starts
+                document.getElementById('login').addEventListener('click',function(){
+                    let email,pwd;
+
+                    email = document.getElementById('exampleInputEmail').value;
+                    pwd = document.getElementById('exampleInputPassword').value;
+
+                    if (email==""){
+                        document.getElementById('eErr').style.display = 'block';
+                    }else{
+                        document.getElementById('eErr').style.display = 'none';
+                    }
+                    if (pwd==""){
+                        document.getElementById('pErr').style.display = 'block';
+                    }else{
+                        document.getElementById('pErr').style.display = 'none';
+                    }
+                });
+                document.getElementById('clicked').addEventListener('click',displayform);
+                    function displayform(){
+                    var a=document.getElementById('form');
+                    if(a.style.display === 'none'){
+                        a.style.display = 'block';
+                    }else{
+                        a.style.display = 'none';
+                    }
+                };
+                document.getElementById('Close').addEventListener('click',closeform);
+                function closeform(){
+                    var b=document.getElementById('form');
+                    if (b.style.display === 'block') {
+                        b.style.display = 'none';
+                    } else {
+                        b.style.display = 'none';
+                    }
+                };
+                // login end
+                function wordCount() {
+                    var text = document.getElementById("Message").value;
+                    var count = 0;
+                    var split = text.split(' ');
+                    for (var i = 0; i < split.length; i++) {
+                    if (split[i] != "") {
+                    count++;
+                    }
+                    }
+                    document.getElementById("showCount").innerHTML = count;
+                    }
+                // registration starts
+                document.getElementById('register').addEventListener('click',function(){
+                    let fname,lname,email,cPassword,rpassword;
+                    fname = document.getElementById('Input_firstname').value;
+                    lname = document.getElementById('Input_lastname').value;
+                    email = document.getElementById('Input_email').value;
+                    cPassword = document.getElementById('Input_create_password').value;
+                    rpassword = document.getElementById('Input_Repeat_password').value;
+                    if (fname=="") {
+                        document.getElementById('fErr').style.display = 'block';
+                    } else {
+                    document.getElementById('fErr').style.display = 'none';
+                    }
+                    if (lname=="") {
+                        document.getElementById('lErr').style.display = 'block';
+                    } else {
+                    document.getElementById('lErr').style.display = 'none';
+                    }
+                    if (email=="") {
+                        document.getElementById('e_Err').style.display = 'block';
+                    } else {
+                    document.getElementById('e_Err').style.display = 'none';
+                    }
+                    if (cPassword=="") {
+                        document.getElementById('p_Err').style.display = 'block';
+                    } else {
+                    document.getElementById('p_Err').style.display = 'none';
+                    }
+                    if (rpassword=="") {
+                        document.getElementById('rErr').style.display = 'block';
+                    } else {
+                    document.getElementById('rErr').style.display = 'none';
+                    }
+                });
+                document.getElementById('register_form').addEventListener('click',registrationForm);
+                    function registrationForm(){
+                    var b=document.getElementById('registerForm');
+                    if(b.style.display === 'none'){
+                        b.style.display = 'block';
+                    }else{
+                        b.style.display = 'none';
+                    }
+                };
+                document.getElementById('cancel').addEventListener('click',closeforms);
+                function closeforms(){
+                    var b=document.getElementById('registerForm');
+                    if (b.style.display === 'block') {
+                        b.style.display = 'none';
+                    } else {
+                        b.style.display = 'none';
+                    }
+                };
+                // registration end
+            </script>
+    </body>
+</html>

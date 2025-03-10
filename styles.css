@@ -1,0 +1,290 @@
+.parent{
+    background-color: ghostwhite;
+    padding: 0%;
+    color: black;
+}
+@media screen and (min-width:320px) and (max-width:720px){
+    header{
+        grid-template-columns: repeat(1,1fr);
+        line-height: 0.01rem;
+        text-align: center;
+    }
+}
+nav{
+    display: grid;
+    grid-template-columns: 28% 62% 10%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: grid;
+    margin-top: 4.5%;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    font-size: 25px;
+}
+@media screen and (max-width:900px) {
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        text-decoration: center;
+        position: relative;
+        top: 180px;
+        right: 80px;
+    }
+    .icons a{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 65%;
+        text-align: center;
+        background-color: rgb(129, 20, 255);
+    }
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 5%;
+    text-align: center;
+
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+h4{
+    margin: 7% 0%;
+    font-size: 40px;
+}
+
+.icons :hover{
+    transform: scale(1.04);
+}
+
+.dNone, .text-danger{
+    display: none;
+    color: red;
+}
+h2{
+    text-align: center;
+}
+.polygon{
+    text-align: center;
+    background-color: orangered;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0 100%,7% 50%,0 0);
+    padding: 0.2em 1em;
+}
+.icons{
+    margin-top: 32px;
+    padding: 10px;
+    font-size: 25px;
+}
+.wrapper{
+    position: absolute;
+    border: 2px solid black;
+    padding: 20px 30px;
+    left: 80%;
+    background-color: white;
+    text-align: left;
+    display: none;
+}
+.login_form{
+    border: 1px solid black;
+    text-align: left;
+    margin-left: 75%;
+    padding: 8%;
+}
+.registration{
+    position: absolute;
+    left: 80%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 25px;
+    display: none;
+}
+.register{
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.register:hover{
+    transform: scale(1.08);
+}
+.cancel {
+    margin-left: 55%;
+    border: 1px solid black;
+    background-color: red;
+}
+.cancel:hover{
+    transform: scale(1.08);
+}
+.banner img{ 
+    width: 100%;
+    margin-bottom: 30px;
+}
+.banner_text{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 35%;
+    font-size: large;
+}
+.quote{ 
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.fa-solid{
+    color:orangered;
+}
+.quote span, nav span{
+    color:orangered;
+}
+.banner button {
+    border: 1px solid red;
+    position: absolute;
+    top: 55%;
+    padding: 13px;
+    background-color: rgb(249, 40, 25);
+    left: 45%;
+}
+button{
+    padding: 3%;
+    background-color: rgb(249, 40, 25);
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+button:hover{
+    transform: scale(1.09);
+    background-color: rgb(253, 110, 110);
+}
+.features, .review, .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    width: 100%;
+    width: 100%;
+}
+.features section:hover, .products section:hover, .categories section:hover, .blogs section:hover, .review section:hover{
+    transform: scale(1.01);
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    text-align: center;
+    width: 100%;
+}
+.products section span{
+    color: orange;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+    width: 100%;
+}
+#login:hover{
+    transform: scale(1.1);
+}
+.review section, .categories section, .products section, .features section, .blogs section{
+    border: 1px solid black;
+    padding: 4%;
+    margin: 8% 8%;
+    text-align: center;
+    background-color: #ccc;
+    outline: 8px solid white;
+}
+.products section span i{
+    line-height: 35px;
+}
+.review section img{
+    border-radius:50%;
+    text-align:center;
+    width: 100%;
+}
+.stars{
+    color: orangered;
+}
+.blogs p{
+    text-align: left;
+}
+.blogs section img, .products section img, .categories section img, .features section img{
+    width: 100%;
+}
+.blogs button{
+    margin-bottom: 5%;
+    text-align: center;
+}
+.date{
+    padding: 5%;
+    list-style: none;
+    font-size: medium;
+}
+.user, .calender{
+    color: orange;
+}
+.candy{
+    text-align: left;
+    margin-left: 40px;
+}
+.blogs section h3{
+    border-top: 2px solid black;
+    margin-bottom: 20px;
+    text-align: left;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left:4%;
+    line-height: 30px;
+}
+footer h2{
+    text-align: left;
+}
+.footer_icons i{
+    padding: 5px;
+    color: orangered;
+}
+footer :hover{
+    scale: (1,1);
+}
+footer section:nth-child(2){
+    list-style: none;
+    border: none;
+}
+footer section:nth-child(3){
+    list-style: none;
+    border: none;
+}
+footer li{
+    color:orangered;
+    margin-left: 15px;
+}
+footer li span{
+    color: black;
+}
+footer button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.developer{
+    font-size: 30px;
+    text-align: center;
+}
+hr{
+    border: 1px solid black;
+}
+
+@media screen and (max-width:900px){
+    .features, .products, .categories, .review, .blogs, footer{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    footer, footer h2{
+        text-align: center;
+    }
+    .features section:hover, .products section:hover .categories section:hover, .blogs section:hover, .review section:hover{
+        transform: scale(1.1);
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+    }
+}
