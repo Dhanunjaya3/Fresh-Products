@@ -3,52 +3,29 @@
     padding: 0%;
     color: black;
 }
-@media screen and (min-width:320px) and (max-width:720px){
-    header{
-        grid-template-columns: repeat(1,1fr);
-        line-height: 0.01rem;
-        text-align: center;
-    }
-}
 header{
     display: grid;
-    grid-template-columns: 28% 62% 10%;
+    grid-template-columns: 20% 68% 12%;
     text-align: center;
 }
 nav ul{
     list-style: none;
     display: grid;
-    margin-top: 4.5%;
     grid-template-columns: repeat(6,1fr);
+    margin-top: 40px;
     text-align: center;
     font-size: 25px;
 }
 nav ul li a{
     text-decoration: none;
 }
-/* @media screen and (max-width:900px) {
-    ul{
-        display: grid;
-        grid-template-columns: repeat(3,2fr);
-        text-decoration: center;
-        position: relative;
-        top: 180px;
-        right: 80px;
-    }
-    .icons a{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin-top: 65%;
-        text-align: center;
-        background-color: rgb(129, 20, 255);
-    }
-} */
 .icons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-top: 5%;
     text-align: center;
-
+    margin-top: 32px;
+    font-size: 35px;
+    margin-right: 20px;
 }
 nav ul li:hover{
     transform: scale(1.1);
@@ -57,11 +34,9 @@ h4{
     margin: 7% 0%;
     font-size: 40px;
 }
-
-.icons :hover{
+.icons:hover{
     transform: scale(1.04);
 }
-
 .dNone, .text-danger{
     display: none;
     color: red;
@@ -75,11 +50,6 @@ h2{
     clip-path: polygon(100% 0,93% 50%,100% 99%,0 100%,7% 50%,0 0);
     padding: 0.2em 1em;
 }
-.icons{
-    margin-top: 32px;
-    padding: 10px;
-    font-size: 25px;
-}
 .wrapper{
     position: absolute;
     border: 2px solid black;
@@ -92,7 +62,7 @@ h2{
 .login_form{
     border: 1px solid black;
     text-align: left;
-    margin-left: 75%;
+    margin-left: 65%;
     padding: 8%;
 }
 .registration{
@@ -122,31 +92,11 @@ h2{
     width: 100%;
     margin-bottom: 30px;
 }
-.banner_text{
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 35%;
-    font-size: large;
-}
-.quote{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}
 .fa-solid{
     color:orangered;
 }
-.quote span, nav span{
+.it{
     color:orangered;
-}
-.banner button {
-    border: 1px solid red;
-    position: absolute;
-    top: 55%;
-    padding: 13px;
-    background-color: rgb(249, 40, 25);
-    left: 45%;
 }
 button{
     padding: 3%;
@@ -274,30 +224,13 @@ footer button{
 hr{
     border: 1px solid black;
 }
-
-@media screen and (max-width:900px){
-    .features, .products, .categories, .review, .blogs, footer{
-        grid-template-columns: repeat(1,1fr);
-        width: 100%;
-    }
-    footer, footer h2{
-        text-align: center;
-    }
-    .features section:hover, .products section:hover .categories section:hover, .blogs section:hover, .review section:hover{
-        transform: scale(1.1);
-    }
-    nav{
-        display: grid;
-        grid-template-columns: 30% 40% 30%;
-    }
-}
 .menu{
     display: none;
-    padding: 20px;
-    font-size: larger;
-
 }
 @media screen and (max-width:900px){
+    h4{
+        font-size: 42px;
+    }
     nav ul{
         display: block;
         position: absolute;
@@ -310,17 +243,44 @@ hr{
         overflow: hidden;
     }
     nav ul li{
-        background-color: blue;
+        background-color: aqua;
         padding: 20px;
     }
     nav ul li a{
-        color: white;
+        color: orangered;
         text-decoration: none;
     }
     .menu{
         display: block;
         position: absolute;
-        right: 20px;
-        padding: 20px;
+        right: 15px;
+        font-size: xx-large;
+    }
+    header{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap: 0px;
+    }
+    .menu:hover{
+        transform: scale(1.1);
+    }
+    .icons{
+        font-size: xx-large;
+        display: grid;
+        grid-template-columns: 25% 30% 30%;
+        right: 60px;
+        margin-top: 0px;
+        padding: 0%;
+        margin: 0px;
+    }
+    .features, .products, .categories, .review, .blogs, footer{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    footer, footer h2{
+        text-align: center;
+    }
+    .features section :hover, .products section :hover .categories section :hover, .blogs section :hover, .review section :hover{
+        transform: scale(1.05);
     }
 }
