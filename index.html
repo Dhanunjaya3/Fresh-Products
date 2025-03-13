@@ -9,33 +9,38 @@
         <link rel="stylesheet" href="./styles.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
-    <body>
-        <section class="parent">
+    <body class="parent">
+        <section>
             <!-- nav bar part -->
-            <nav>
+            <header>
                 <section>
                     <h4><i class="fa-solid fa-basket-shopping"></i> Achievers<span> IT</span><h4>
                 </section>
-                <ul>
-                    <li>
-                        <a>Homes</a>
-                    </li>
-                    <li>
-                        <a>Features</a>
-                    </li>
-                    <li>
-                        <a>Products</a>
-                    </li>
-                    <li>
-                        <a>Categories</a>
-                    </li>
-                    <li>
-                        <a>Review</a>
-                    </li>
-                    <li>
-                        <a>Blogs</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul id="menuList">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">Products</a>
+                        </li>
+                        <li>
+                            <a href="">Categories</a>
+                        </li>
+                        <li>
+                            <a href="">Review</a>
+                        </li>
+                        <li>
+                            <a href="">Blogs</a>
+                        </li>
+                    </ul>
+                    <div class="menu">
+                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                    </div>
+                </nav>
                 <section class="icons">
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -47,7 +52,7 @@
                         <i class="fa-solid fa-user" aria-hidden="true" id="clicked"></i>
                     </a>
                 </section>
-            </nav>
+            </header>
             <!-- Nav bar part ends -->
             <!--login form-->
             <section class="wrapper animate__animated animate__bounceInRight" id="form">
@@ -364,7 +369,21 @@
             <!--footer part ends -->
             <h3 class="developer"><hr>This web page was developed by Dhanunjaya</h3>
             <script>
-                //  login page starts
+
+                //  Menu Start
+                let menuList = document.getElementById("menuList")
+                menuList.style.maxHeight = "0px";
+
+                function toggleMenu(){
+                    if ( menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "300px";
+                    } else {
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+                //  menu ends
+
                 // login starts
                 document.getElementById('login').addEventListener('click',function(){
                     let email,pwd;

@@ -10,12 +10,12 @@
         text-align: center;
     }
 }
-nav{
+header{
     display: grid;
     grid-template-columns: 28% 62% 10%;
     text-align: center;
 }
-ul{
+nav ul{
     list-style: none;
     display: grid;
     margin-top: 4.5%;
@@ -23,7 +23,10 @@ ul{
     text-align: center;
     font-size: 25px;
 }
-@media screen and (max-width:900px) {
+nav ul li a{
+    text-decoration: none;
+}
+/* @media screen and (max-width:900px) {
     ul{
         display: grid;
         grid-template-columns: repeat(3,2fr);
@@ -39,7 +42,7 @@ ul{
         text-align: center;
         background-color: rgb(129, 20, 255);
     }
-}
+} */
 .icons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -115,7 +118,7 @@ h2{
 .cancel:hover{
     transform: scale(1.08);
 }
-.banner img{ 
+.banner img{
     width: 100%;
     margin-bottom: 30px;
 }
@@ -126,7 +129,7 @@ h2{
     left: 35%;
     font-size: large;
 }
-.quote{ 
+.quote{
     position: absolute;
     top: 30%;
     left: 40%;
@@ -286,5 +289,38 @@ hr{
     nav{
         display: grid;
         grid-template-columns: 30% 40% 30%;
+    }
+}
+.menu{
+    display: none;
+    padding: 20px;
+    font-size: larger;
+
+}
+@media screen and (max-width:900px){
+    nav ul{
+        display: block;
+        position: absolute;
+        height: 600px;
+        right: 0px;
+        left: 0px;
+        flex-direction: column;
+        text-align: Center;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        background-color: blue;
+        padding: 20px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        padding: 20px;
     }
 }
